@@ -915,6 +915,7 @@ body {
 .stekos {
     margin-top: 150px;
     padding: 0px;
+    font-family: 'Noto Sans'
 }
 
 @media(max-width:1400px){
