@@ -840,6 +840,12 @@ ul.social-buttons li a:active {
     margin: 0 auto;
 }
 
+@media(max-width:620px){
+    .portfolio-modal .modal-content{
+        width: 100%;
+    }
+}
+
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 2em;
@@ -947,7 +953,6 @@ body {
         }
 }
 
-
 .stekos {
     margin-top: 150px;
     padding: 0px;
@@ -962,7 +967,13 @@ body {
 
 @media(max-width:768px){
         .stekos{
-            margin-top: 0%;
+            margin-top: 30%;
+        }
+}
+
+@media(max-width:400px){
+        .stekos{
+            margin-top: 35%;
         }
 }
 
@@ -976,6 +987,12 @@ body {
 @media(max-width: 1007px){
         .stekos h1{
             font-size: 30px;
+        }
+}
+
+@media(max-width:768px){
+        .stekos h1{
+            font-size: 20px;
         }
 }
 
@@ -1029,7 +1046,7 @@ body {
 
 @media(max-width:768px){
     .arrow-block{
-        margin-top: 65px;
+        margin-top: 0px;
     }
 }
 
@@ -1047,6 +1064,7 @@ body {
 @media(max-width:768px){
     .s-block{
         margin-top: 1px;
+        margin-bottom: 50px;
     }
 }
 
@@ -1229,7 +1247,7 @@ figure.effect-ming figcaption::before {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale3d(1.4,1.4,1);
-	transform: scale3d(1.4,1.4,1);
+
 }
 
 @media(min-width:991px){
@@ -1265,6 +1283,7 @@ figure.effect-ming p {
 	transform: scale(1.5);
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
 }
 
 figure.effect-ming:hover figcaption::before,
