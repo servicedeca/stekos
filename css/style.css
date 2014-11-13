@@ -446,6 +446,8 @@ section h3.section-subheading {
     z-index: 1;
 }
 
+
+
 #portfolio .portfolio-item .caption-part {
     margin: 0 auto;
     height: 45px;
@@ -494,6 +496,129 @@ section h3.section-subheading {
         margin: 0 0 30px;
     }
 }
+
+#team .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+@media(min-width:992px){
+    #team .portfolio-item{
+        height: 240px;
+    }
+}
+
+@media(min-width:1200px){
+    #team .portfolio-item{
+        height: 300px;
+    }
+}
+
+#team .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#team .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(254,209,54,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#team .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#team .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#team .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+
+#team .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#team .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+}
+
+#team .portfolio-item .portfolio-caption {
+    margin: 0 auto;
+    height: 60px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.8;
+    margin-top: -60px;
+    border-top:3px solid #8b1b1c;
+    z-index: 1;
+}
+
+
+
+#team .portfolio-item .caption-part {
+    margin: 0 auto;
+    height: 45px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.8;
+    margin-top: -45px;
+    border-top:3px solid #8b1b1c;
+    z-index: 1;
+}
+
+@media(max-width:991px) {
+   #team .portfolio-item .caption-part {
+        margin: 0 auto;
+        height: 60px;
+        max-width: 400px;
+        text-align: center;
+        background-color: #fff;
+        opacity: 0.8;
+        margin-top: -60px;
+        border-top:3px solid #8b1b1c;
+        z-index: 1;
+    }
+}
+
+
+#team .portfolio-item .portfolio-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+#team .portfolio-item .portfolio-caption p {
+    margin: 0;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #team .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
 
 .timeline {
     position: relative;
@@ -1472,20 +1597,35 @@ figure.effect-ming:hover img {
 .portfolio-site {
     font-weight: 300;
     font-family: 'Noto Sans';
+    color:#4d4e4e;
+    transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+	-webkit-transition: all 200ms linear;
+	-o-transition: all 200ms linear;
+}
+
+.portfolio-site:hover {
+    color:#777979;
+        transition: all 200ms linear;
+	-moz-transition: all 200ms linear;
+	-webkit-transition: all 200ms linear;
+	-o-transition: all 200ms linear;
 }
 
 .modal-body a{
-    color:#4d4e4e;
+    color:#fff;
 }
 
 .my-button {
     background-color: #8b1b1c;
-    
+    color:#fff;    
+    border: none;
 }
 
 .my-button:hover {
     background-color: #8b1b1c;
 }
+
 .title-contacts {
     color:#fff;
     margin-top: -50px;
@@ -1534,5 +1674,25 @@ figure.effect-ming:hover img {
     text-decoration: none;
 }
 
+.magic2 {
+    height:210px;
+}
 
+.border-none {
+    border:none;
+}
 
+.number {
+    font-size: 30px;
+    margin-top: -3px;
+}
+
+@media(max-width:991px){
+    .number{
+        margin-top: 15px;
+    }
+}
+
+#page-top {
+    
+}
